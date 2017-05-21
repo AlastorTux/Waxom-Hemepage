@@ -1,0 +1,20 @@
+:fullscreen a {
+  display: flex;
+}
+ -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+:-moz-full-screen a {
+  display: flex;
+}
+:-ms-fullscreen a {
+  display: -ms-flexbox;
+  display: flex;
+}
+:fullscreen a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
