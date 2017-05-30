@@ -8,6 +8,7 @@
   src: url('fonts/Raleway-Regular.eot');
   src: url('fonts/Raleway-Regular.woff2') format('woff2'), url('fonts/Raleway-Regular.woff') format('woff'), url('fonts/Raleway-Regular.ttf') format('truetype'), url('fonts/Raleway-Regular.svg#Raleway-Regular') format('svg'), url('fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype');
 }
+.example__info__h2,
 .logo,
 .logo__span,
 .slider__h1,
@@ -165,8 +166,7 @@ nav ul li:hover {
   text-align: center;
 }
 .pluses__line {
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: 30px auto 0;
   width: 70px;
   height: 3px;
   background-color: #f1eee9;
@@ -206,4 +206,34 @@ nav ul li:hover {
 }
 .marketing:hover .pluses__line {
   background-color: #c7b299;
+}
+.example__info {
+  width: 1920px;
+  background-color: #fbfaf8;
+}
+.example__info__h2 {
+  padding-top: 83px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #555555;
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 600;
+}
+.example__info__p {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 757px;
+  color: #8c8c8c;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+.example__info__img {
+  margin: 0 auto;
+  width: 1230px;
+  height: 482px;
+  background: url('img/browser-center.png') no-repeat bottom center, url('img/browser-left.png') no-repeat bottom left, url('img/browser-right.png') no-repeat bottom right;
 }
