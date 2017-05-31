@@ -295,8 +295,7 @@ nav ul li:hover {
 }
 .project__info {
   width: 1170px;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -449,8 +448,7 @@ nav ul li:hover {
 .project__button {
   display: inline-block;
   text-decoration: none;
-  margin: 0 auto;
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
   padding: 20px 45px;
   color: #ffffff;
   font-family: Raleway;
@@ -470,4 +468,51 @@ nav ul li:hover {
 .project__button:active {
   background-color: #908070;
   box-shadow: inset 0 5px 0 #736357;
+}
+.video__section {
+  background: linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.5)), url('img/bg-video.png');
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.vidoe__button {
+  display: block;
+  margin: 210px auto 44px;
+  width: 100px;
+  height: 100px;
+  background-image: url('img/play_button.png');
+}
+.video__h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 29px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 500;
+}
+.video__p {
+  margin: 0 auto 220px;
+  width: 600px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+.player {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  outline: none;
+  display: none;
+}
+.player:target {
+  display: block;
 }
