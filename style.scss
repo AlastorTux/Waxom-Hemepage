@@ -1075,7 +1075,7 @@ nav {
 
 .partners {
   margin: 0 auto;
-  background: linear-gradient(rgba(17, 17, 17, 0.5),rgba(17, 17, 17, 0.7)),  url('img/bg_logos.png') center;
+  background: linear-gradient(rgba(17, 17, 17, 0.5),rgba(17, 17, 17, 0.7)),  url('img/bg_logos.png') center no-repeat;
   height: 100%;
   width: 100%;
   max-width: $max_width_slider_bg;
