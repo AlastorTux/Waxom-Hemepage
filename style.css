@@ -516,6 +516,8 @@ nav {
 }
 
 .last__project__h2 {
+  margin-top: 72px;
+  margin-bottom: 15px;
   text-align: center;
   color: #555555;
   font-family: Raleway;
@@ -524,7 +526,7 @@ nav {
 }
 
 .last__project__p {
-  margin: 0 auto;
+  margin: 0 auto 24px;
   width: 100%;
   max-width: 757px;
   text-align: center;
@@ -820,4 +822,125 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.mobile {
+  background-color: #fbfaf8;
+}
+
+.mobile_content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+  background-image: url("img/iphone-in-hand.png");
+  background-repeat: no-repeat;
+  background-position: 75px bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.mobile_h2 {
+  margin-right: 262px;
+  margin-top: 195px;
+  color: #555555;
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.mobile_p {
+  width: 100%;
+  margin-top: 0;
+  max-width: 657px;
+  color: #8c8c8c;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.mobile_ul {
+  display: block;
+  padding: 0;
+  margin: 11px 16px 0 0;
+  list-style-type: none;
+  margin-bottom: 179px;
+}
+
+.mobile_li {
+  padding-left: 10px;
+  background: url(img/li.png) 0 5px no-repeat;
+  padding-left: 50px;
+  color: #8c8c8c;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.statistics {
+  background-image: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+
+.counters {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.counter {
+  text-align: center;
+  max-width: 140px;
+}
+
+.counter_p {
+  margin-top: 30px;
+  margin-bottom: 21px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 200;
+  line-height: 36px;
+}
+
+.counter_caption {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  color: #c7b299;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.counter_line {
+  margin: 0 auto;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.counter_img {
+  vertical-align: bottom;
+  margin-top: 69px;
+  margin-bottom: 0px;
 }
