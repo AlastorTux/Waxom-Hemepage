@@ -1075,11 +1075,10 @@ nav {
 
 .partners {
   margin: 0 auto;
-  background: linear-gradient(rgba(17, 17, 17, 0.5),rgba(17, 17, 17, 0.7)),  url('img/bg_logos.png') center no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.5),rgba(17, 17, 17, 0.7)), url('img/bg_logos.png') center no-repeat;
   height: 100%;
   width: 100%;
   max-width: $max_width_slider_bg;
-
 }
 
 .partners_content {
@@ -1092,10 +1091,246 @@ nav {
 }
 
 .partners_link {
-  margin: 0 45px;
-  margin-top: 140px;
+  margin: 140px 45px 0;
 }
 
 .partners_img {
   vertical-align: bottom;
+}
+
+.info_bottom {
+  background-color: #191919;
+}
+
+.info_bottom_content {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: $main__width;
+}
+
+.info_bottom_content_logo {
+  display: flex;
+  align-items: center;
+}
+
+.info_bottom_content_logo_img {
+  text-decoration: none;
+}
+
+.info_bottom_content_logo__img {
+  vertical-align: bottom;
+}
+
+.info_bottom_content_logo_link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.info_bottom__content_main {
+  margin-top: 80px;
+  width: 100%;
+  max-width: 258px;
+}
+
+.info_bottom_content_main_p {
+  margin-top: 30px;
+  margin-bottom: 33px;
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.read_more_bottom {
+  margin: 0;
+  padding: 0;
+  color: #d1d1d1;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.read_more_bottom::after {
+  content: '';
+  display: inline-block;
+  margin-left: 9px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-left: 6px solid #d1d1d1;
+  border-bottom: 4px solid transparent;
+}
+
+.bottom_posts {
+  margin-left: 40px;
+  margin-top: 80px;
+  width: 100%;
+  max-width: 262px;
+}
+
+.bottom_posts_h2 {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.posts_post {
+  &:hover .bottom_post_date {
+    color: #ffffff;
+  }
+
+  &:hover .bottom_post_text {
+    color: #c7b299;
+  }
+}
+
+.bottom_post_date {
+  margin-top: 33px;
+  margin-bottom: 10px;
+  color: #363636;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.bottom_post_text {
+  margin: 0;
+  padding: 0;
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.bottom_twitter {
+  margin-left: 20px;
+  margin-top: 80px;
+  width: 100%;
+  max-width: 262px;
+}
+
+.bottom_twitter_h2 {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.bottom_twitter_date {
+  margin: 0;
+  padding: 0;
+  color: #363636;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.bottom_twitter_text {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 3px;
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.twitter_tags {
+  color: #00bff3;
+}
+
+.twitter_link {
+  text-decoration: none;
+  color: #959595;
+}
+
+.bottom_widget {
+  margin-left: 40px;
+  margin-top: 80px;
+  width: 100%;
+  max-width: 280px;
+}
+
+.bottom_widget_h2 {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.bottom_widget_content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.widget_widget {
+  padding: 5px;
+}
+
+footer {
+  background-color: #111111;
+}
+
+.footer_content {
+  padding-top: 45px;
+  padding-bottom: 52px;
+  justify-content: space-between;
+  display: flex;
+  margin: 0 auto;
+  max-width: $main__width;
+}
+
+.copyright_span {
+
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #555555;
+}
+
+.copyrignt_link {
+
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #252525;
+
+  &:hover {
+    color: #c7b299;
+  }
+}
+
+.name {
+  color: #959595;
+}
+
+.footer_line{
+  margin:  0 12px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 4px;
+  width: 1px;
+  height: 12px;
+  background-color: #252525;
 }
