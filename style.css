@@ -122,13 +122,74 @@ nav {
 }
 
 .slider {
-  position: relative;
-  margin-top: -96px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: -96px auto 0;
   width: 100%;
+  max-width: 1920px;
+  position: relative;
+}
+
+.slides {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: inherit;
   text-align: center;
 }
 
+.slide_1,
+.slide_2,
+.slide_3 {
+  padding: 381px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: inherit;
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-out;
+  transition: opacity 2s ease-out;
+}
+
+.slide_1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.5)), to(rgba(17, 17, 17, 0.5))), url("img/dark_side.jpg") center no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.5)), url("img/dark_side.jpg") center no-repeat;
+}
+
+.slide_2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.5)), to(rgba(17, 17, 17, 0.5))), url("img/star_wars.jpg") center no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.5)), url("img/star_wars.jpg") center no-repeat;
+}
+
+.slide_3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.5)), to(rgba(17, 17, 17, 0.5))), url("img/light_side.png") center no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.5)), url("img/light_side.png") center no-repeat;
+  display: block;
+  opacity: 1;
+}
+
+#slide_1:target ~ .slide_1 {
+  display: block;
+  opacity: 1;
+}
+
+#slide_2:target ~ .slide_2 {
+  display: block;
+  opacity: 1;
+}
+
+#slide_3:target ~ .slide_3 {
+  display: block;
+  opacity: 1;
+}
+
+#slide_3:not(:target) ~ .slide_3 {
+  display: none;
+}
+
 .slider_left {
+  position: absolute;
+  left: 10%;
+  top: 45%;
   display: inline-block;
   width: 40px;
   height: 73px;
@@ -140,6 +201,9 @@ nav {
 }
 
 .slider_right {
+  position: absolute;
+  right: 10%;
+  top: 45%;
   display: inline-block;
   width: 40px;
   height: 73px;
@@ -212,31 +276,13 @@ nav {
           box-shadow: inset 0 5px 0 #736357;
 }
 
-.navigation_slider {
-  padding-bottom: 42px;
-}
-
-.slider_content {
-  position: relative;
-  display: none;
-}
-.slider_content:target {
-  display: block;
-}
-.slider_content:not(:target), .slider_content:target ~ #slide_3 {
-  display: none;
-}
-
-#slide_3 {
-  display: block;
-}
-
-.slider__h3,
-.slider__h1,
-.slider__p,
-.slider__button {
+.button_circle {
+  display: inline-block;
+  text-align: center;
   position: absolute;
-  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 5%;
 }
 
 .slide_circle {
