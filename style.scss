@@ -175,16 +175,18 @@ nav {
   opacity: 1;
 }
 
+#slide_1:target ~ .slide_3 {
+  display: none;
+}
+
+#slide_2:target ~ .slide_3 {
+  display: none;
+}
+
 #slide_3:target ~ .slide_3 {
   display: block;
   opacity: 1;
 }
-
-#slide_3:not(:target) ~.slide_3 {
-  display: none;
-}
-
-
 
 .slider_left {
   position: absolute;
