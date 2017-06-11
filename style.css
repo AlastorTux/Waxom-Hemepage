@@ -69,6 +69,10 @@ header {
   text-decoration: none;
 }
 
+.m_menu {
+  display: none;
+}
+
 nav {
   margin-top: 18px;
 }
@@ -1494,11 +1498,41 @@ footer {
     background-color: black;
   }
 
+  .h_wrapper {
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: block;
+    text-align: center;
+  }
+
+  .m_menu {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+  }
+
+  .m_menu:after {
+    content: "M";
+    color: white;
+    margin: 0 auto;
+    padding: 15px 25px 15px 15px;
+    background-color: gray;
+  }
+
+  .m_menu:checked ~ nav {
+    display: none;
+  }
+
   .function {
+    display: block;
     background-color: black;
-    margin-top: 8px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
   }
 
   nav {
@@ -1507,6 +1541,7 @@ footer {
   }
 
   .menu {
+    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1520,9 +1555,10 @@ footer {
   }
 
   .menu__item {
+    display: block;
+    width: 100%;
     margin: 0;
     padding: 5px 0;
-    border: 1px solid white;
   }
 
   .pluses {
